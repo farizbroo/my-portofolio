@@ -54,7 +54,7 @@ export default function Home() {
             <div className="w-full lg:w-1/2 order-1 lg:order-3">
               <div className="relative max-w-md mx-auto lg:mx-0 lg:ml-auto shadow-2xl rounded-2xl overflow-hidden bg-white animate-fadeInUp delay-300">
                 <img
-                  src="/1.png"
+                  src="/1.webp"
                   alt="Foto profil Salman Al Farisiy, Full Stack Web Developer"
                   className="max-w-full w-full h-auto object-cover scale-105 hover:scale-110 transition-transform duration-500"
                 />
