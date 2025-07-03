@@ -227,7 +227,7 @@ export default function Home() {
                     <div className="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl">
                       <div className="flex items-center mb-4">
                         <div className="w-3 h-3 bg-indigo-500 rounded-full mr-3"></div>
-                        <h3 className="text-xl font-bold text-indigo-600">Full Stack Web Developer</h3>
+                        <h2 className="text-xl font-bold text-indigo-600">Full Stack Web Developer</h2>
                       </div>
                       <p className="text-slate-600 font-medium mb-4">Freelance Developer</p>
                       <p className="text-slate-700">
@@ -258,7 +258,7 @@ export default function Home() {
                     <div className="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl">
                       <div className="flex items-center mb-4">
                         <div className="w-3 h-3 bg-purple-500 rounded-full mr-3"></div>
-                        <h3 className="text-xl font-bold text-purple-600">Frontend Developer</h3>
+                        <h2 className="text-xl font-bold text-purple-600">Frontend Developer</h2>
                       </div>
                       <p className="text-slate-600 font-medium mb-4">Web Development Agency</p>
                       <p className="text-slate-700">
@@ -289,7 +289,7 @@ export default function Home() {
                     <div className="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl">
                       <div className="flex items-center mb-4">
                         <div className="w-3 h-3 bg-pink-500 rounded-full mr-3"></div>
-                        <h3 className="text-xl font-bold text-pink-600">Junior Web Developer</h3>
+                        <h2 className="text-xl font-bold text-pink-600">Junior Web Developer</h2>
                       </div>
                       <p className="text-slate-600 font-medium mb-4">Startup Technology</p>
                       <p className="text-slate-700">
@@ -333,7 +333,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-indigo-600 mb-2">E-commerce Platform</h3>
+                  <h2 className="text-xl font-bold text-indigo-600 mb-2">E-commerce Platform</h2>
                   <p className="text-slate-600 mb-4">
                     Platform e-commerce lengkap dengan sistem pembayaran, manajemen produk, dan dashboard admin.
                   </p>
@@ -359,7 +359,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-indigo-600 mb-2">Task Management App</h3>
+                  <h2 className="text-xl font-bold text-indigo-600 mb-2">Task Management App</h2>
                   <p className="text-slate-600 mb-4">
                     Aplikasi manajemen tugas dengan fitur real-time collaboration, drag-and-drop, dan notifikasi.
                   </p>
@@ -385,7 +385,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-indigo-600 mb-2">Weather Dashboard</h3>
+                  <h2 className="text-xl font-bold text-indigo-600 mb-2">Weather Dashboard</h2>
                   <p className="text-slate-600 mb-4">
                     Dashboard cuaca interaktif dengan prediksi 7 hari, peta cuaca, dan integrasi API real-time.
                   </p>
@@ -411,7 +411,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-indigo-600 mb-2">Social Media Platform</h3>
+                  <h2 className="text-xl font-bold text-indigo-600 mb-2">Social Media Platform</h2>
                   <p className="text-slate-600 mb-4">
                     Platform media sosial dengan fitur posting, komentar, like, dan sistem follow yang kompleks.
                   </p>
@@ -437,7 +437,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-indigo-600 mb-2">Analytics Dashboard</h3>
+                  <h2 className="text-xl font-bold text-indigo-600 mb-2">Analytics Dashboard</h2>
                   <p className="text-slate-600 mb-4">
                     Dashboard analitik bisnis dengan visualisasi data interaktif dan laporan real-time.
                   </p>
@@ -463,7 +463,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-indigo-600 mb-2">Learning Platform</h3>
+                  <h2 className="text-xl font-bold text-indigo-600 mb-2">Learning Platform</h2>
                   <p className="text-slate-600 mb-4">
                     Platform pembelajaran online dengan video streaming, quiz interaktif, dan sistem sertifikasi.
                   </p>
