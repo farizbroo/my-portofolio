@@ -7,7 +7,7 @@ export default function Home() {
       {/* Home Section */}
       <section
         id="home"
-        className="pt-28 pb-16 md:pt-36 min-h-screen bg-gradient-to-br from-indigo-100 via-white to-indigo-200"
+        className="pt-28 pb-16 md:pt-36 min-h-screen bg-gradient-to-br from-indigo-100 via-white to-indigo-200 animate-fadeInUp"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
@@ -15,16 +15,16 @@ export default function Home() {
             {/* Teks Konten */}
             <div className="w-full lg:w-1/2 order-2 lg:order-1">
               <div className="max-w-xl">
-                <h1 className="font-semibold text-indigo-500 md:text-xl lg:text-2xl animate-fadeInUp">
+                <h1 className="font-semibold text-indigo-500 md:text-xl lg:text-2xl">
                   Hai..! 👋 saya
-                  <span className="block font-bold text-black text-4xl mt-1 lg:text-5xl animate-gradient bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  <span className="block font-bold text-4xl mt-1 lg:text-5xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                     Salman Al Farisiy
                   </span>
                 </h1>
-                <h2 className="text-slate-500 text-lg mb-5 lg:text-2xl animate-fadeInUp delay-100">
+                <h2 className="text-slate-500 text-lg mb-5 lg:text-2xl">
                   Full Stack Web Developer
                 </h2>
-                <p className="text-slate-400 mb-10 animate-fadeInUp delay-200">
+                <p className="text-slate-400 mb-10">
                   Membangun Solusi Digital dari Frontend hingga Backend. Saya adalah Full Stack Web Developer yang menghadirkan performa, keamanan, dan desain modern ke dalam setiap baris kode.
                 </p>
 
@@ -32,16 +32,14 @@ export default function Home() {
                 <div className="flex flex-wrap gap-4">
                   <a
                     href="#contact"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-all duration-200 text-base font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-500 py-3 px-8 rounded-full hover:scale-105 shadow-lg hover:shadow-2xl flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                    className="transition-all duration-200 text-base font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-500 py-3 px-8 rounded-full hover:scale-105 shadow-lg hover:shadow-2xl flex items-center gap-2"
                     aria-label="Hubungi Saya via WhatsApp"
                   >
                     <FaWhatsapp className="text-xl" /> Hubungi Saya
                   </a>
                   <a
                     href="#about"
-                    className="transition-all duration-200 text-base font-semibold text-indigo-500 bg-white py-2.5 px-6 rounded-full border-indigo-500 border-2 hover:bg-indigo-100 hover:scale-105 shadow-md hover:shadow-lg flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+                    className="transition-all duration-200 text-base font-semibold text-indigo-500 bg-white py-2.5 px-6 rounded-full border-indigo-500 border-2 hover:bg-indigo-100 hover:scale-105 shadow-md hover:shadow-lg flex items-center gap-2"
                     aria-label="Lihat Profil Saya"
                   >
                     <FaUser className="text-lg" /> Lihat Profil Saya
@@ -52,10 +50,10 @@ export default function Home() {
 
             {/* Foto Konten */}
             <div className="w-full lg:w-1/2 order-1 lg:order-3">
-              <div className="relative max-w-md mx-auto lg:mx-0 lg:ml-auto shadow-2xl rounded-2xl overflow-hidden bg-white animate-fadeInUp delay-300">
+              <div className="relative max-w-md mx-auto lg:mx-0 lg:ml-auto shadow-2xl rounded-2xl overflow-hidden bg-white">
                 <img
                   src="/1.webp"
-                  alt="Foto profil Salman Al Farisiy, Full Stack Web Developer"
+                  alt="Foto profil Salman Al Farisiy"
                   className="max-w-full w-full h-auto object-cover scale-105 hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-200/30 to-transparent pointer-events-none" />
@@ -63,26 +61,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <style jsx global>{`
-          @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(40px); }
-            100% { opacity: 1; transform: translateY(0); }
-          }
-          .animate-fadeInUp {
-            animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) both;
-          }
-          .animate-fadeInUp.delay-100 { animation-delay: 0.1s; }
-          .animate-fadeInUp.delay-200 { animation-delay: 0.2s; }
-          .animate-fadeInUp.delay-300 { animation-delay: 0.3s; }
-          @keyframes gradient {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-          }
-          .animate-gradient {
-            background-size: 200% 200%;
-            animation: gradient 3s ease-in-out infinite;
-          }
-        `}</style>
       </section>
 
       {/* About Section */}
@@ -201,21 +179,21 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              {/* Timeline line */}
+              {/* Garis Pembatas */}
               <div className="hidden md:block absolute left-1/2 w-1 h-full bg-indigo-200 transform -translate-x-1/2"></div>
 
-              {/* Experience items */}
+              {/* Pengalaman */}
               <div className="space-y-8 md:space-y-12">
-                {/* Experience 1 */}
-                <div className="relative flex flex-col md:flex-row items-center md:flex-row-reverse">
-                  {/* Year (mobile) */}
+                {/* Pengalaman 1 */}
+                <div className="relative flex flex-col items-center md:flex-row-reverse">
+                  {/* Tahun (mobile) */}
                   <div className="md:hidden w-full mb-4">
                     <div className="w-24 h-8 bg-indigo-500 rounded-md flex items-center justify-center mx-auto">
                       <span className="text-white font-medium">2023</span>
                     </div>
                   </div>
 
-                  {/* Year (desktop) */}
+                  {/* Tahun (desktop) */}
                   <div className="hidden md:flex w-1/2 items-center justify-center">
                     <div className="w-24 h-8 bg-indigo-500 rounded-md flex items-center justify-center">
                       <span className="text-white font-medium">2023</span>
@@ -237,16 +215,16 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Experience 2 */}
+                {/* Pengalaman 2 */}
                 <div className="relative flex flex-col md:flex-row items-center">
-                  {/* Year (mobile) */}
+                  {/* Tahun (mobile) */}
                   <div className="md:hidden w-full mb-4">
                     <div className="w-24 h-8 bg-purple-500 rounded-md flex items-center justify-center mx-auto">
                       <span className="text-white font-medium">2022</span>
                     </div>
                   </div>
 
-                  {/* Year (desktop) */}
+                  {/* Tahun (desktop) */}
                   <div className="hidden md:flex w-1/2 items-center justify-center">
                     <div className="w-24 h-8 bg-purple-500 rounded-md flex items-center justify-center">
                       <span className="text-white font-medium">2022</span>
@@ -268,16 +246,16 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Experience 3 */}
-                <div className="relative flex flex-col md:flex-row items-center md:flex-row-reverse">
-                  {/* Year (mobile) */}
+                {/* Pengalaman 3 */}
+                <div className="relative flex flex-col items-center md:flex-row-reverse">
+                  {/* Tahun (mobile) */}
                   <div className="md:hidden w-full mb-4">
                     <div className="w-24 h-8 bg-pink-500 rounded-md flex items-center justify-center mx-auto">
                       <span className="text-white font-medium">2021</span>
                     </div>
                   </div>
 
-                  {/* Year (desktop) */}
+                  {/* Tahun (desktop) */}
                   <div className="hidden md:flex w-1/2 items-center justify-center">
                     <div className="w-24 h-8 bg-pink-500 rounded-md flex items-center justify-center">
                       <span className="text-white font-medium">2021</span>
@@ -326,7 +304,7 @@ export default function Home() {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
                 <div className="relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    src="/project-1.webp"
                     alt="E-commerce Website"
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -352,7 +330,7 @@ export default function Home() {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
                 <div className="relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    src="/project-2.webp"
                     alt="Task Management App"
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -378,7 +356,7 @@ export default function Home() {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
                 <div className="relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    src="/project-3.webp"
                     alt="Weather Dashboard"
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -404,7 +382,7 @@ export default function Home() {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
                 <div className="relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    src="/project-4.webp"
                     alt="Social Media App"
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -430,7 +408,7 @@ export default function Home() {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
                 <div className="relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    src="/project-5.webp"
                     alt="Analytics Dashboard"
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -456,7 +434,7 @@ export default function Home() {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
                 <div className="relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    src="/project-6.webp"
                     alt="Learning Platform"
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -473,8 +451,7 @@ export default function Home() {
                     <span className="px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-sm font-medium">MySQL</span>
                   </div>
                   <div className="flex gap-3">
-                    <a href="#" className="text-indigo-500 hover:text-indigo-700 font-medium text-sm">Demo</a>
-                    <a href="#" className="text-indigo-500 hover:text-indigo-700 font-medium text-sm">GitHub</a>
+                    <a href="#" className="text-indigo-500 hover:text-indigo-700 font-medium text-sm">Lihat Project</a>
                   </div>
                 </div>
               </div>
@@ -500,11 +477,12 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
               {/* Testimoni 1 */}
               <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
                 <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
-                  alt="Avatar pelanggan 1"
+                  src="/tester-1.webp"
+                  alt="tester-1"
                   className="w-20 h-20 rounded-full mb-4 object-cover border-4 border-indigo-200"
                 />
                 <p className="text-slate-700 italic mb-4">“Salman sangat profesional dan komunikatif. Proyek e-commerce kami selesai tepat waktu dan hasilnya sangat memuaskan!”</p>
@@ -516,8 +494,8 @@ export default function Home() {
               {/* Testimoni 2 */}
               <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300">
                 <img
-                  src="https://randomuser.me/api/portraits/women/44.jpg"
-                  alt="Avatar pelanggan 2"
+                  src="/tester-2.webp"
+                  alt="tester-2"
                   className="w-20 h-20 rounded-full mb-4 object-cover border-4 border-purple-200"
                 />
                 <p className="text-slate-700 italic mb-4">“Sangat puas dengan dashboard analitik yang dibangun Salman. User interface-nya modern dan mudah digunakan.”</p>
@@ -529,8 +507,8 @@ export default function Home() {
               {/* Testimoni 3 */}
               <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-all duration-300 md:col-span-2">
                 <img
-                  src="https://randomuser.me/api/portraits/men/65.jpg"
-                  alt="Avatar pelanggan 3"
+                  src="/tester-3.webp"
+                  alt="tester-3"
                   className="w-20 h-20 rounded-full mb-4 object-cover border-4 border-pink-200"
                 />
                 <p className="text-slate-700 italic mb-4">“Kerja sama dengan Salman sangat menyenangkan. Komunikasi jelas, hasil kerja rapi, dan selalu memberikan solusi terbaik.”</p>

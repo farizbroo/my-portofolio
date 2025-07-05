@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-/* Smooth scrolling for the entire page */
+/* Scrooll Smooth untuk semua halaman */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar for better UX */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -23,7 +23,7 @@ html {
   background: #94a3b8;
 }
 
-/* Ensure sections have proper spacing for smooth scrolling */
+/* Jarak antara section */
 section {
   scroll-margin-top: 100px;
 }
